@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Contact = (props) => {
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
-  useEffect(() => {
-    const redirectTimeout = setTimeout(() => {
-      navigate("/about");
-    }, 2000);
+  //   useEffect(() => {
+  //     const redirectTimeout = setTimeout(() => {
+  //       navigate("/about");
+  //     }, 2000);
 
-    return () => {
-      clearTimeout(redirectTimeout);
-    };
-  }, [navigate]);
+  //     return () => {
+  //       clearTimeout(redirectTimeout);
+  //     };
+  //   }, [navigate]);
 
   return (
     <div className="container">
