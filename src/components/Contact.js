@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Contact = () => {
+const Contact = (props) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectTimeout = setTimeout(() => {
+      navigate("/about");
+    }, 2000);
+
+    return () => {
+      clearTimeout(redirectTimeout);
+    };
+  }, [navigate]);
+
   return (
     <div className="container">
       <h4 className="center">Contact</h4>
