@@ -16,7 +16,7 @@ export class App extends Component {
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/:post_id" element={<Post />} />
+            <Route path="/post/:post_id" element={<Post />} />
           </Routes>
         </div>
       </BrowserRouter>
